@@ -1,0 +1,109 @@
+.contact {
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact .container {
+    width: 100%;
+}
+
+.contact .info {
+    padding: 50px 40px;
+    background: rgb(11, 38, 89);
+    color: white;
+}
+
+.contact .info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact .info p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.contact .info i {
+    padding: 20px;
+    margin-right: 10px;
+    background: darkorange;
+    color: rgb(11, 38, 89);
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid darkorange;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.contact .info i:hover {
+    background: rgb(11, 38, 89);
+    color: darkorange;
+}
+
+.contact .in {
+    padding: 50px 40px;
+}
+
+.contact .in input {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid rgb(11, 38, 89);
+    border-radius: 5px;
+    background: rgb(11, 38, 89);
+    color: white;
+    transition: 0.4s;
+    outline: none;
+}
+
+.contact .in input:focus {
+    background: white;
+    border: 1px solid darkorange;
+    color: rgb(11, 38, 89);
+}
+
+.contact .in textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    height: 200px;
+    outline: none;
+    background: rgb(227, 227, 227);
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contact .in button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(11, 38, 89);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact .in button:hover {
+    background: darkorange;
+}
+
+@media (min-width: 992px) {
+    .contact .cover {
+        display: flex;
+    }
+    .contact .info {
+        width: 50%;
+        padding-top: 150px;
+    }
+    .contact .info h1 {
+        font-size: 50px;
+    }
+    .contact .in {
+        width: 50%;
+    }
+}

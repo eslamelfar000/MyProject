@@ -1,0 +1,124 @@
+.portfolio {
+    padding: 80px 0px;
+}
+
+.portfolio .portfolio-title {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(28, 54, 101);
+    margin-bottom: 10px;
+}
+
+.portfolio .line {
+    width: 20%;
+    margin: auto;
+    color: darkorange;
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-list .portfolio-item {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: cursive;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0px 3px;
+}
+
+.portfolio .portfolio-list .portfolio-item:hover {
+    background: rgb(28, 54, 101);
+    color: darkorange;
+    border-radius: 5px;
+}
+
+.portfolio .portfolio-list .active {
+    font-weight: 600;
+    background: rgb(28, 54, 101);
+    color: darkorange;
+    font-size: 18px;
+}
+
+.portfolio .box .card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.portfolio .box .card img {
+    width: 100%;
+    height: 300px;
+}
+
+.portfolio .box .card span {
+    position: absolute;
+    cursor: pointer;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background: darkorange;
+    color: white;
+    border-radius: 15px 0px 15px 0px;
+    font-weight: 600;
+    transition: 0.4s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.portfolio .box .card span:hover {
+    background: 0;
+    border: 1px solid darkorange;
+    color: darkorange;
+}
+
+.portfolio .box .card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(28, 54, 101, 0.47);
+    transition: 0.4s;
+}
+
+.portfolio .box .card:hover::after {
+    background: rgba(28, 54, 101, 0.759);
+}
+
+.portfolio .box .card:hover span {
+    opacity: 1;
+    top: 50%;
+}
+
+@media (min-width: 767px) {
+    .portfolio .box .card {
+        float: left;
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 991px) {
+    .portfolio .box .card {
+        float: left;
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 20px;
+    }
+}

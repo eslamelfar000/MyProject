@@ -1,0 +1,57 @@
+.profile_skills {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.skills {
+    padding: 50px 30px;
+    background: darkorange;
+    display: inline-block;
+    width: 100%;
+}
+
+.skills h2 {
+    font-size: 40px;
+    color: rgb(17, 43, 74);
+    margin-bottom: 20px;
+}
+
+.skills .skills-desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.skills .bar {
+    width: 100%;
+}
+
+.skills .bar .title {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.skills .bar .perc {
+    font-size: 25px;
+    color: rgb(17, 43, 74);
+    font-weight: 600;
+}
+
+.skills .bar .parent {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.skills .bar .parent progress {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 7px;
+}
+
+.skills .bar .parent progress::-moz-progress-bar {
+    background: rgb(17, 43, 74);
+    border-radius: 5px;
+    height: 7px;
+}
